@@ -12,7 +12,7 @@
         "id": "workExperience",
         "type": "ContentType",
         "createdAt": "2024-04-18T05:16:20.204Z",
-        "updatedAt": "2024-04-18T07:02:41.726Z",
+        "updatedAt": "2024-04-24T02:11:25.275Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -20,8 +20,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 3,
-        "publishedAt": "2024-04-18T07:02:41.726Z",
+        "publishedVersion": 5,
+        "publishedAt": "2024-04-24T02:11:25.275Z",
         "firstPublishedAt": "2024-04-18T05:16:20.724Z",
         "createdBy": {
           "sys": {
@@ -37,8 +37,8 @@
             "id": "24xELcGAn6cqGiuyQLS1MD"
           }
         },
-        "publishedCounter": 2,
-        "version": 4,
+        "publishedCounter": 3,
+        "version": 6,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -50,7 +50,7 @@
       },
       "displayField": "title",
       "name": "Work Experience",
-      "description": "",
+      "description": "An entry for a work experience",
       "fields": [
         {
           "id": "title",
@@ -193,7 +193,7 @@
         "id": "workPage",
         "type": "ContentType",
         "createdAt": "2024-04-18T05:19:42.084Z",
-        "updatedAt": "2024-04-18T06:52:04.798Z",
+        "updatedAt": "2024-04-24T02:12:33.451Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -201,8 +201,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 3,
-        "publishedAt": "2024-04-18T06:52:04.798Z",
+        "publishedVersion": 15,
+        "publishedAt": "2024-04-24T02:12:33.451Z",
         "firstPublishedAt": "2024-04-18T05:19:42.709Z",
         "createdBy": {
           "sys": {
@@ -218,8 +218,8 @@
             "id": "24xELcGAn6cqGiuyQLS1MD"
           }
         },
-        "publishedCounter": 2,
-        "version": 4,
+        "publishedCounter": 8,
+        "version": 16,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -230,8 +230,8 @@
         "urn": "crn:contentful:::content:spaces/9y6bw8wj9521/environments/master/content_types/workPage"
       },
       "displayField": "pageTitle",
-      "name": "Work Section",
-      "description": "",
+      "name": "Work Page",
+      "description": "Contents for work page",
       "fields": [
         {
           "id": "pageTitle",
@@ -245,64 +245,21 @@
           "omitted": false
         },
         {
-          "id": "workPageImage",
-          "name": "Work Page Image",
+          "id": "workHero",
+          "name": "Work Hero",
           "type": "Link",
           "localized": false,
-          "required": false,
-          "validations": [
-          ],
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Asset"
-        },
-        {
-          "id": "description",
-          "name": "Description",
-          "type": "RichText",
-          "localized": false,
-          "required": false,
+          "required": true,
           "validations": [
             {
-              "enabledMarks": [
-                "bold",
-                "italic",
-                "underline",
-                "code",
-                "superscript",
-                "subscript"
-              ],
-              "message": "Only bold, italic, underline, code, superscript, and subscript marks are allowed"
-            },
-            {
-              "enabledNodeTypes": [
-                "heading-1",
-                "heading-2",
-                "heading-3",
-                "heading-4",
-                "heading-5",
-                "heading-6",
-                "ordered-list",
-                "unordered-list",
-                "hr",
-                "blockquote",
-                "embedded-entry-block",
-                "embedded-asset-block",
-                "table",
-                "hyperlink",
-                "entry-hyperlink",
-                "asset-hyperlink",
-                "embedded-entry-inline"
-              ],
-              "message": "Only heading 1, heading 2, heading 3, heading 4, heading 5, heading 6, ordered list, unordered list, horizontal rule, quote, block entry, asset, table, link to Url, link to entry, link to asset, and inline entry nodes are allowed"
-            },
-            {
-              "nodes": {
-              }
+              "linkContentType": [
+                "hero"
+              ]
             }
           ],
           "disabled": false,
-          "omitted": false
+          "omitted": false,
+          "linkType": "Entry"
         },
         {
           "id": "workExperiences",
@@ -327,6 +284,94 @@
           }
         }
       ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "9y6bw8wj9521"
+          }
+        },
+        "id": "hero",
+        "type": "ContentType",
+        "createdAt": "2024-04-24T01:31:52.079Z",
+        "updatedAt": "2024-04-24T02:12:18.991Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2024-04-24T02:12:18.991Z",
+        "firstPublishedAt": "2024-04-24T01:31:52.538Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "24xELcGAn6cqGiuyQLS1MD"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "24xELcGAn6cqGiuyQLS1MD"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "24xELcGAn6cqGiuyQLS1MD"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/9y6bw8wj9521/environments/master/content_types/hero"
+      },
+      "displayField": "heroTitle",
+      "name": "Hero",
+      "description": "Hero component with title, body, and image",
+      "fields": [
+        {
+          "id": "heroTitle",
+          "name": "Hero Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "heroBody",
+          "name": "Hero Body",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "heroImage",
+          "name": "Hero Image",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        }
+      ]
     }
   ],
   "tags": [
@@ -343,7 +388,7 @@
             "linkType": "Space"
           }
         },
-        "version": 4,
+        "version": 6,
         "createdAt": "2024-04-18T05:16:20.899Z",
         "createdBy": {
           "sys": {
@@ -352,7 +397,7 @@
             "linkType": "User"
           }
         },
-        "updatedAt": "2024-04-18T07:02:42.889Z",
+        "updatedAt": "2024-04-24T02:11:26.242Z",
         "updatedBy": {
           "sys": {
             "id": "24xELcGAn6cqGiuyQLS1MD",
@@ -427,7 +472,7 @@
             "linkType": "Space"
           }
         },
-        "version": 4,
+        "version": 16,
         "createdAt": "2024-04-18T05:19:42.898Z",
         "createdBy": {
           "sys": {
@@ -436,7 +481,7 @@
             "linkType": "User"
           }
         },
-        "updatedAt": "2024-04-18T06:52:05.872Z",
+        "updatedAt": "2024-04-24T02:12:34.305Z",
         "updatedBy": {
           "sys": {
             "id": "24xELcGAn6cqGiuyQLS1MD",
@@ -466,18 +511,74 @@
           "widgetNamespace": "builtin"
         },
         {
-          "fieldId": "workPageImage",
-          "widgetId": "assetLinkEditor",
-          "widgetNamespace": "builtin"
-        },
-        {
-          "fieldId": "description",
-          "widgetId": "richTextEditor",
+          "fieldId": "workHero",
+          "widgetId": "entryLinkEditor",
           "widgetNamespace": "builtin"
         },
         {
           "fieldId": "workExperiences",
           "widgetId": "entryCardsEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "9y6bw8wj9521",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 4,
+        "createdAt": "2024-04-24T01:31:52.695Z",
+        "createdBy": {
+          "sys": {
+            "id": "24xELcGAn6cqGiuyQLS1MD",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2024-04-24T02:12:20.050Z",
+        "updatedBy": {
+          "sys": {
+            "id": "24xELcGAn6cqGiuyQLS1MD",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "hero",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "heroTitle",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "heroBody",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "heroImage",
+          "widgetId": "assetLinkEditor",
           "widgetNamespace": "builtin"
         }
       ]
@@ -748,7 +849,7 @@
         "id": "2Rgw7jRNbtVeLGDZMFSdd5",
         "type": "Entry",
         "createdAt": "2024-04-18T07:07:50.649Z",
-        "updatedAt": "2024-04-18T07:09:04.960Z",
+        "updatedAt": "2024-04-24T02:14:32.725Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -756,8 +857,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 9,
-        "publishedAt": "2024-04-18T07:09:04.960Z",
+        "publishedVersion": 18,
+        "publishedAt": "2024-04-24T02:14:32.725Z",
         "firstPublishedAt": "2024-04-18T07:09:04.960Z",
         "createdBy": {
           "sys": {
@@ -773,8 +874,8 @@
             "id": "24xELcGAn6cqGiuyQLS1MD"
           }
         },
-        "publishedCounter": 1,
-        "version": 10,
+        "publishedCounter": 4,
+        "version": 19,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -795,39 +896,15 @@
       },
       "fields": {
         "pageTitle": {
-          "en-US": "Work"
+          "en-US": "Work Page"
         },
-        "workPageImage": {
+        "workHero": {
           "en-US": {
             "sys": {
               "type": "Link",
-              "linkType": "Asset",
-              "id": "3Urkh2Dp5nsRxhc1BT7zH0"
+              "linkType": "Entry",
+              "id": "2RVp0aUqSs3oQYkM1T3Yv2"
             }
-          }
-        },
-        "description": {
-          "en-US": {
-            "data": {
-            },
-            "content": [
-              {
-                "data": {
-                },
-                "content": [
-                  {
-                    "data": {
-                    },
-                    "marks": [
-                    ],
-                    "value": "This is a collection of my work and all my experiences.",
-                    "nodeType": "text"
-                  }
-                ],
-                "nodeType": "paragraph"
-              }
-            ],
-            "nodeType": "document"
           }
         },
         "workExperiences": {
@@ -849,9 +926,7 @@
           ]
         }
       }
-    }
-  ],
-  "assets": [
+    },
     {
       "metadata": {
         "tags": [
@@ -865,10 +940,10 @@
             "id": "9y6bw8wj9521"
           }
         },
-        "id": "76HiAs6Q47Y4zKAPyZSJ4V",
-        "type": "Asset",
-        "createdAt": "2024-03-20T06:31:26.407Z",
-        "updatedAt": "2024-03-20T06:31:51.484Z",
+        "id": "2RVp0aUqSs3oQYkM1T3Yv2",
+        "type": "Entry",
+        "createdAt": "2024-04-24T02:06:49.153Z",
+        "updatedAt": "2024-04-24T02:09:35.404Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -876,9 +951,9 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 3,
-        "publishedAt": "2024-03-20T06:31:51.484Z",
-        "firstPublishedAt": "2024-03-20T06:31:51.484Z",
+        "publishedVersion": 6,
+        "publishedAt": "2024-04-24T02:09:35.404Z",
+        "firstPublishedAt": "2024-04-24T02:09:35.404Z",
         "createdBy": {
           "sys": {
             "type": "Link",
@@ -894,7 +969,7 @@
           }
         },
         "publishedCounter": 1,
-        "version": 4,
+        "version": 7,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -902,27 +977,31 @@
             "id": "24xELcGAn6cqGiuyQLS1MD"
           }
         },
-        "urn": "crn:contentful:::content:spaces/9y6bw8wj9521/environments/master/assets/76HiAs6Q47Y4zKAPyZSJ4V"
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "hero"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/9y6bw8wj9521/environments/master/entries/2RVp0aUqSs3oQYkM1T3Yv2"
       },
       "fields": {
-        "title": {
-          "en-US": "guacamole"
+        "heroTitle": {
+          "en-US": "Work Experience"
         },
-        "description": {
-          "en-US": ""
+        "heroBody": {
+          "en-US": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
         },
-        "file": {
+        "heroImage": {
           "en-US": {
-            "url": "//images.ctfassets.net/9y6bw8wj9521/76HiAs6Q47Y4zKAPyZSJ4V/81f70003253bfbb98c4cdb091c0c7c31/guacamole.jpg",
-            "details": {
-              "size": 1064048,
-              "image": {
-                "width": 1200,
-                "height": 800
-              }
-            },
-            "fileName": "guacamole.jpg",
-            "contentType": "image/jpeg"
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "6PS1ewyRLpUtGDw4VB82HE"
+            }
           }
         }
       }
@@ -940,160 +1019,10 @@
             "id": "9y6bw8wj9521"
           }
         },
-        "id": "2ovKE8v5SBBW5AqWZqud4d",
-        "type": "Asset",
-        "createdAt": "2024-03-20T06:33:31.023Z",
-        "updatedAt": "2024-03-20T06:33:43.823Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "publishedVersion": 3,
-        "publishedAt": "2024-03-20T06:33:43.823Z",
-        "firstPublishedAt": "2024-03-20T06:33:43.823Z",
-        "createdBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "24xELcGAn6cqGiuyQLS1MD"
-          }
-        },
-        "updatedBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "24xELcGAn6cqGiuyQLS1MD"
-          }
-        },
-        "publishedCounter": 1,
-        "version": 4,
-        "publishedBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "24xELcGAn6cqGiuyQLS1MD"
-          }
-        },
-        "urn": "crn:contentful:::content:spaces/9y6bw8wj9521/environments/master/assets/2ovKE8v5SBBW5AqWZqud4d"
-      },
-      "fields": {
-        "title": {
-          "en-US": "spaghetti"
-        },
-        "description": {
-          "en-US": ""
-        },
-        "file": {
-          "en-US": {
-            "url": "//images.ctfassets.net/9y6bw8wj9521/2ovKE8v5SBBW5AqWZqud4d/9d2827ccfca82db349ae893a4304edc1/spaghetti.jpg",
-            "details": {
-              "size": 1293302,
-              "image": {
-                "width": 1200,
-                "height": 800
-              }
-            },
-            "fileName": "spaghetti.jpg",
-            "contentType": "image/jpeg"
-          }
-        }
-      }
-    },
-    {
-      "metadata": {
-        "tags": [
-        ]
-      },
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "9y6bw8wj9521"
-          }
-        },
-        "id": "3Urkh2Dp5nsRxhc1BT7zH0",
-        "type": "Asset",
-        "createdAt": "2024-03-20T06:35:18.264Z",
-        "updatedAt": "2024-03-20T06:35:34.471Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "publishedVersion": 3,
-        "publishedAt": "2024-03-20T06:35:34.471Z",
-        "firstPublishedAt": "2024-03-20T06:35:34.471Z",
-        "createdBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "24xELcGAn6cqGiuyQLS1MD"
-          }
-        },
-        "updatedBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "24xELcGAn6cqGiuyQLS1MD"
-          }
-        },
-        "publishedCounter": 1,
-        "version": 4,
-        "publishedBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "24xELcGAn6cqGiuyQLS1MD"
-          }
-        },
-        "urn": "crn:contentful:::content:spaces/9y6bw8wj9521/environments/master/assets/3Urkh2Dp5nsRxhc1BT7zH0"
-      },
-      "fields": {
-        "title": {
-          "en-US": "Ventral Hydrogen White Matt 5 grande"
-        },
-        "description": {
-          "en-US": ""
-        },
-        "file": {
-          "en-US": {
-            "url": "//images.ctfassets.net/9y6bw8wj9521/3Urkh2Dp5nsRxhc1BT7zH0/fa1529c50afa83a8ff1d3fc3688c151c/Ventral_Hydrogen_White_Matt_5_grande.webp",
-            "details": {
-              "size": 27946,
-              "image": {
-                "width": 491,
-                "height": 600
-              }
-            },
-            "fileName": "Ventral_Hydrogen_White_Matt_5_grande.webp",
-            "contentType": "image/webp"
-          }
-        }
-      }
-    },
-    {
-      "metadata": {
-        "tags": [
-        ]
-      },
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "9y6bw8wj9521"
-          }
-        },
-        "id": "18fcwON5KIn0vA8D36m85i",
-        "type": "Asset",
-        "createdAt": "2024-03-30T03:02:36.735Z",
-        "updatedAt": "2024-03-30T03:03:27.851Z",
+        "id": "5lR0NXKwBpIaeF1BoZ1D0y",
+        "type": "Entry",
+        "createdAt": "2024-04-24T02:16:20.546Z",
+        "updatedAt": "2024-04-24T02:17:30.246Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -1102,8 +1031,8 @@
           }
         },
         "publishedVersion": 5,
-        "publishedAt": "2024-03-30T03:03:27.851Z",
-        "firstPublishedAt": "2024-03-30T03:03:27.851Z",
+        "publishedAt": "2024-04-24T02:17:30.246Z",
+        "firstPublishedAt": "2024-04-24T02:17:30.246Z",
         "createdBy": {
           "sys": {
             "type": "Link",
@@ -1127,14 +1056,95 @@
             "id": "24xELcGAn6cqGiuyQLS1MD"
           }
         },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "hero"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/9y6bw8wj9521/environments/master/entries/5lR0NXKwBpIaeF1BoZ1D0y"
+      },
+      "fields": {
+        "heroTitle": {
+          "en-US": "Creating experiences that fuel work and life."
+        },
+        "heroBody": {
+          "en-US": "I'm Miko, a web developer focusing mainly on frontend development, user interface and experience."
+        },
+        "heroImage": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "6PS1ewyRLpUtGDw4VB82HE"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "assets": [
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "9y6bw8wj9521"
+          }
+        },
+        "id": "18fcwON5KIn0vA8D36m85i",
+        "type": "Asset",
+        "createdAt": "2024-03-30T03:02:36.735Z",
+        "updatedAt": "2024-04-24T02:13:22.958Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 8,
+        "publishedAt": "2024-04-24T02:13:22.958Z",
+        "firstPublishedAt": "2024-03-30T03:03:27.851Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "24xELcGAn6cqGiuyQLS1MD"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "24xELcGAn6cqGiuyQLS1MD"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 9,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "24xELcGAn6cqGiuyQLS1MD"
+          }
+        },
         "urn": "crn:contentful:::content:spaces/9y6bw8wj9521/environments/master/assets/18fcwON5KIn0vA8D36m85i"
       },
       "fields": {
         "title": {
-          "en-US": "fujitsu logo"
+          "en-US": "fujitsu"
         },
         "description": {
-          "en-US": ""
+          "en-US": "fujitsu company logo"
         },
         "file": {
           "en-US": {
@@ -1243,7 +1253,7 @@
         "id": "1cQQxWEXKiPY70LSBSfkNI",
         "type": "Asset",
         "createdAt": "2024-03-30T03:05:27.739Z",
-        "updatedAt": "2024-03-30T03:06:06.155Z",
+        "updatedAt": "2024-04-24T02:13:48.876Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -1251,8 +1261,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 5,
-        "publishedAt": "2024-03-30T03:06:06.155Z",
+        "publishedVersion": 7,
+        "publishedAt": "2024-04-24T02:13:48.876Z",
         "firstPublishedAt": "2024-03-30T03:06:06.155Z",
         "createdBy": {
           "sys": {
@@ -1268,8 +1278,8 @@
             "id": "24xELcGAn6cqGiuyQLS1MD"
           }
         },
-        "publishedCounter": 1,
-        "version": 6,
+        "publishedCounter": 2,
+        "version": 8,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -1284,7 +1294,7 @@
           "en-US": "bolton"
         },
         "description": {
-          "en-US": ""
+          "en-US": "bolton company logo"
         },
         "file": {
           "en-US": {
@@ -1318,7 +1328,7 @@
         "id": "01hO9I9HTiTMHEGjgsD17k",
         "type": "Asset",
         "createdAt": "2024-03-30T03:06:38.007Z",
-        "updatedAt": "2024-03-30T03:07:04.536Z",
+        "updatedAt": "2024-04-24T02:13:36.375Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -1326,8 +1336,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 5,
-        "publishedAt": "2024-03-30T03:07:04.536Z",
+        "publishedVersion": 7,
+        "publishedAt": "2024-04-24T02:13:36.375Z",
         "firstPublishedAt": "2024-03-30T03:07:04.536Z",
         "createdBy": {
           "sys": {
@@ -1343,8 +1353,8 @@
             "id": "24xELcGAn6cqGiuyQLS1MD"
           }
         },
-        "publishedCounter": 1,
-        "version": 6,
+        "publishedCounter": 2,
+        "version": 8,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -1359,7 +1369,7 @@
           "en-US": "mrm"
         },
         "description": {
-          "en-US": ""
+          "en-US": "mrm company logo"
         },
         "file": {
           "en-US": {
@@ -1373,6 +1383,81 @@
             },
             "fileName": "mrm.png",
             "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "9y6bw8wj9521"
+          }
+        },
+        "id": "6PS1ewyRLpUtGDw4VB82HE",
+        "type": "Asset",
+        "createdAt": "2024-04-24T02:08:01.492Z",
+        "updatedAt": "2024-04-24T02:09:24.080Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 7,
+        "publishedAt": "2024-04-24T02:09:24.080Z",
+        "firstPublishedAt": "2024-04-24T02:09:24.080Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "24xELcGAn6cqGiuyQLS1MD"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "24xELcGAn6cqGiuyQLS1MD"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 8,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "24xELcGAn6cqGiuyQLS1MD"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/9y6bw8wj9521/environments/master/assets/6PS1ewyRLpUtGDw4VB82HE"
+      },
+      "fields": {
+        "title": {
+          "en-US": "Miko Profile Image"
+        },
+        "description": {
+          "en-US": "Miko profile image"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/9y6bw8wj9521/6PS1ewyRLpUtGDw4VB82HE/1ae8b66ed29e804f81dc618996b50e54/IMG_4480.JPG",
+            "details": {
+              "size": 11630600,
+              "image": {
+                "width": 4160,
+                "height": 6240
+              }
+            },
+            "fileName": "IMG_4480.JPG",
+            "contentType": "image/jpeg"
           }
         }
       }
