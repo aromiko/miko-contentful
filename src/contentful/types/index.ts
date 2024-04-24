@@ -1,3 +1,4 @@
+export type { TypeHero, TypeHeroFields, TypeHeroSkeleton } from "./TypeHero";
 export type {
   TypeWorkExperience,
   TypeWorkExperienceFields,
