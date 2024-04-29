@@ -372,6 +372,131 @@
           "linkType": "Asset"
         }
       ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "9y6bw8wj9521"
+          }
+        },
+        "id": "lifeExperience",
+        "type": "ContentType",
+        "createdAt": "2024-04-29T12:30:38.620Z",
+        "updatedAt": "2024-04-29T12:30:39.082Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2024-04-29T12:30:39.082Z",
+        "firstPublishedAt": "2024-04-29T12:30:39.082Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "24xELcGAn6cqGiuyQLS1MD"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "24xELcGAn6cqGiuyQLS1MD"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "24xELcGAn6cqGiuyQLS1MD"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/9y6bw8wj9521/environments/master/content_types/lifeExperience"
+      },
+      "displayField": "lifeTitle",
+      "name": "Life Experience",
+      "description": "An entry for life entry",
+      "fields": [
+        {
+          "id": "lifeTitle",
+          "name": "Life Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "lifeDescription",
+          "name": "Life Description",
+          "type": "RichText",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "enabledMarks": [
+                "bold",
+                "italic",
+                "underline",
+                "code",
+                "superscript",
+                "subscript"
+              ],
+              "message": "Only bold, italic, underline, code, superscript, and subscript marks are allowed"
+            },
+            {
+              "enabledNodeTypes": [
+                "heading-1",
+                "heading-2",
+                "heading-3",
+                "heading-4",
+                "heading-5",
+                "heading-6",
+                "ordered-list",
+                "unordered-list",
+                "hr",
+                "blockquote",
+                "embedded-entry-block",
+                "embedded-asset-block",
+                "table",
+                "hyperlink",
+                "entry-hyperlink",
+                "asset-hyperlink",
+                "embedded-entry-inline"
+              ],
+              "message": "Only heading 1, heading 2, heading 3, heading 4, heading 5, heading 6, ordered list, unordered list, horizontal rule, quote, block entry, asset, table, link to Url, link to entry, link to asset, and inline entry nodes are allowed"
+            },
+            {
+              "nodes": {
+              }
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "lifeImage",
+          "name": "Life Image",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        }
+      ]
     }
   ],
   "tags": [
@@ -578,6 +703,67 @@
         },
         {
           "fieldId": "heroImage",
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "9y6bw8wj9521",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2024-04-29T12:30:39.280Z",
+        "createdBy": {
+          "sys": {
+            "id": "24xELcGAn6cqGiuyQLS1MD",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2024-04-29T12:30:39.955Z",
+        "updatedBy": {
+          "sys": {
+            "id": "24xELcGAn6cqGiuyQLS1MD",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "lifeExperience",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "lifeTitle",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "lifeDescription",
+          "widgetId": "richTextEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "lifeImage",
           "widgetId": "assetLinkEditor",
           "widgetNamespace": "builtin"
         }
@@ -849,7 +1035,7 @@
         "id": "2Rgw7jRNbtVeLGDZMFSdd5",
         "type": "Entry",
         "createdAt": "2024-04-18T07:07:50.649Z",
-        "updatedAt": "2024-04-24T02:14:32.725Z",
+        "updatedAt": "2024-04-29T12:25:28.917Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -857,8 +1043,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 18,
-        "publishedAt": "2024-04-24T02:14:32.725Z",
+        "publishedVersion": 26,
+        "publishedAt": "2024-04-29T12:25:28.917Z",
         "firstPublishedAt": "2024-04-18T07:09:04.960Z",
         "createdBy": {
           "sys": {
@@ -874,8 +1060,8 @@
             "id": "24xELcGAn6cqGiuyQLS1MD"
           }
         },
-        "publishedCounter": 4,
-        "version": 19,
+        "publishedCounter": 8,
+        "version": 27,
         "publishedBy": {
           "sys": {
             "type": "Link",
